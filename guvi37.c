@@ -2,12 +2,12 @@
 #include<conio.h>
 void main()
 {
-int a,b,temp;
+int a,b,temp2;
 clrscr();
 scanf("%d%d",&a,&b);
-temp=a;
+temp2=a;
 a=b;
-b=temp;
+b=temp2;
 printf("%d %d",a,b);
 getch();
 }
