@@ -1,0 +1,40 @@
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+void main()
+{
+char s[30],a[30]={'k','a','b','a','i','l'};
+int i,n=0,l=0,j,cou=0,k=0,c[30],temp=0,sum=0;
+clrscr();
+scanf("%d",&n);
+n=n+1;
+while(n)
+{
+l=0;
+cou=0;
+	gets(s);
+	l=strlen(s);
+	if(l==6)
+	{
+		for(j=0;j<l;j++)
+		{
+		for(i=0;i<l;i++)
+		{
+		if(s[i]==a[j])
+		{
+		cou++;
+		break;
+		}
+		}
+		}
+			if(cou==l)
+			{
+			temp++;
+			//printf("%d",temp);
+			}
+	}
+	n--;
+}
+printf("%d",temp);
+getch();
+}
